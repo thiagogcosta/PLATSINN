@@ -1,0 +1,514 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.inovamarilia.com.br/ontologia#"
+     xml:base="http://www.inovamarilia.com.br/ontologia"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:epi="http://www.inovamarilia.com.br/ontologia#">
+    <owl:Ontology rdf:about="http://www.inovamarilia.com.br/ontologia#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#hasAreaVocacao -->
+
+    <owl:ObjectProperty rdf:about="http://www.inovamarilia.com.br/ontologia#hasAreaVocacao">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#AmbienteFormalInovacao"/>
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#AmbienteInovacao"/>
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#Empresa"/>
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#EntidadeApoioInovacao"/>
+        <rdfs:range rdf:resource="http://www.inovamarilia.com.br/ontologia#AreaInovacao"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#hasEdital -->
+
+    <owl:ObjectProperty rdf:about="http://www.inovamarilia.com.br/ontologia#hasEdital">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#AmbienteFormalInovacao"/>
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#Coworking"/>
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#EntidadeFomento"/>
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#SistemaLocalInovacao"/>
+        <rdfs:range rdf:resource="http://www.inovamarilia.com.br/ontologia#Edital"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#hasEvento -->
+
+    <owl:ObjectProperty rdf:about="http://www.inovamarilia.com.br/ontologia#hasEvento">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#AmbienteFormalInovacao"/>
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#EntidadeApoioInovacao"/>
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#EntidadeFomento"/>
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#SistemaLocalInovacao"/>
+        <rdfs:range rdf:resource="http://www.inovamarilia.com.br/ontologia#Evento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#hasLegislacao -->
+
+    <owl:ObjectProperty rdf:about="http://www.inovamarilia.com.br/ontologia#hasLegislacao">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#OrgaoPublico"/>
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#SistemaLocalInovacao"/>
+        <rdfs:range rdf:resource="http://www.inovamarilia.com.br/ontologia#Legislacao"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#hasPesquisador -->
+
+    <owl:ObjectProperty rdf:about="http://www.inovamarilia.com.br/ontologia#hasPesquisador">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#AmbienteFormalInovacao"/>
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#AmbienteInovacao"/>
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#Empresa"/>
+        <rdfs:range rdf:resource="http://www.inovamarilia.com.br/ontologia#Pesquisador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#hasProjeto -->
+
+    <owl:ObjectProperty rdf:about="http://www.inovamarilia.com.br/ontologia#hasProjeto">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#CentroPrivadoPDI"/>
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#Empresa"/>
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#LaboratorioPDI"/>
+        <rdfs:range rdf:resource="http://www.inovamarilia.com.br/ontologia#Projeto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#EntidadeInvestidor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.inovamarilia.com.br/ontologia#EntidadeInvestidor">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#Investidor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#NomeInvestidor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.inovamarilia.com.br/ontologia#NomeInvestidor">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#Investidor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#SiteInvestidor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.inovamarilia.com.br/ontologia#SiteInvestidor">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#Investidor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#descricaoEdital -->
+
+    <owl:DatatypeProperty rdf:about="http://www.inovamarilia.com.br/ontologia#descricaoEdital">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#Edital"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#descricaoEvento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.inovamarilia.com.br/ontologia#descricaoEvento">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#Evento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#descricaoNoticia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.inovamarilia.com.br/ontologia#descricaoNoticia">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#Noticia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#dominioEdital -->
+
+    <owl:DatatypeProperty rdf:about="http://www.inovamarilia.com.br/ontologia#dominioEdital">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#Edital"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#dominioEvento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.inovamarilia.com.br/ontologia#dominioEvento">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#Evento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#dominioNoticia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.inovamarilia.com.br/ontologia#dominioNoticia">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#Noticia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#linkEdital -->
+
+    <owl:DatatypeProperty rdf:about="http://www.inovamarilia.com.br/ontologia#linkEdital">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#Edital"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#linkEvento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.inovamarilia.com.br/ontologia#linkEvento">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#Evento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#linkNoticia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.inovamarilia.com.br/ontologia#linkNoticia">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#Noticia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#tituloEdital -->
+
+    <owl:DatatypeProperty rdf:about="http://www.inovamarilia.com.br/ontologia#tituloEdital">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#Edital"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#tituloEvento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.inovamarilia.com.br/ontologia#tituloEvento">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#Evento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#tituloNoticia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.inovamarilia.com.br/ontologia#tituloNoticia">
+        <rdfs:domain rdf:resource="http://www.inovamarilia.com.br/ontologia#Noticia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#Aceleradora -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#Aceleradora">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#EntidadeFomento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#AgenciaFomento -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#AgenciaFomento">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#EntidadeFomento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#AgenciaInovacao -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#AgenciaInovacao">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#EntidadeApoioInovacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#AmbienteFormalInovacao -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#AmbienteFormalInovacao">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#SistemaLocalInovacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#AmbienteInovacao -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#AmbienteInovacao">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#SistemaLocalInovacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#AreaInovacao -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#AreaInovacao"/>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#ArranjoProdutivoLocal -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#ArranjoProdutivoLocal">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#EntidadeApoioInovacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#CentroInovacaoTecnologico -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#CentroInovacaoTecnologico">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#AmbienteFormalInovacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#CentroPrivadoPDI -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#CentroPrivadoPDI">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#AmbienteInovacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#Consultoria -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#Consultoria">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#EntidadeApoioInovacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#Coworking -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#Coworking">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#AmbienteInovacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#Crowfunding -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#Crowfunding">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#EntidadeFomento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#EcossistemaPaulistaInovacao -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#EcossistemaPaulistaInovacao"/>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#Edital -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#Edital"/>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#Empresa -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#Empresa">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#SistemaLocalInovacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#EntidadeApoioInovacao -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#EntidadeApoioInovacao">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#SistemaLocalInovacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#EntidadeClasse -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#EntidadeClasse">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#EntidadeApoioInovacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#EntidadeFomento -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#EntidadeFomento">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#SistemaLocalInovacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#Evento -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#Evento"/>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#FundoAmparo -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#FundoAmparo">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#EntidadeFomento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#IncubadoraBaseTecnologica -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#IncubadoraBaseTecnologica">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#AmbienteFormalInovacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#InstituicaoEnsinoPesquisa -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#InstituicaoEnsinoPesquisa">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#EntidadeApoioInovacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#Investidor -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#Investidor">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#EntidadeFomento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#LaboratorioPDI -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#LaboratorioPDI">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#AmbienteInovacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#Legislacao -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#Legislacao"/>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#Noticia -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#Noticia"/>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#NucleoInovacaoTecnologica -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#NucleoInovacaoTecnologica">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#AmbienteFormalInovacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#OrgaoPublico -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#OrgaoPublico">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#EntidadeApoioInovacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#ParqueTecnologico -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#ParqueTecnologico">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#AmbienteFormalInovacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#Pesquisador -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#Pesquisador"/>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#Projeto -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#Projeto"/>
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#SistemaLocalInovacao -->
+
+    <owl:Class rdf:about="http://www.inovamarilia.com.br/ontologia#SistemaLocalInovacao">
+        <rdfs:subClassOf rdf:resource="http://www.inovamarilia.com.br/ontologia#EcossistemaPaulistaInovacao"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.inovamarilia.com.br/ontologia#E1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.inovamarilia.com.br/ontologia#E1">
+        <rdf:type rdf:resource="http://www.inovamarilia.com.br/ontologia#Investidor"/>
+        <EntidadeInvestidor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Privada</EntidadeInvestidor>
+        <NomeInvestidor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inova Marília</NomeInvestidor>
+        <SiteInvestidor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.inovamarilia.com.br/</SiteInvestidor>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

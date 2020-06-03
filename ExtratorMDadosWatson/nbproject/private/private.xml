@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/InstanciaEstatica/InstanciaEstatica.java</file>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/InstanciaDinamica/ExtracaoCD.java</file>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/Extrator/Busca.java</file>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/Extrator/Link.java</file>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/InstanciaEstatica/EntidadeDAO.java</file>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/WATSON/NLUnderstandIBMWatson.java</file>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/InstanciaDinamica/LinkExtracaoFUSEKI.java</file>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/InstanciaDinamica/Extracao.java</file>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/InstanciaDinamica/HashConteudo.java</file>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/WATSON/LanguageTranslateIBMWatson.java</file>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/InstanciaEstatica/InstanciaEstaticaCD.java</file>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/Extrator/Dado.java</file>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/InstanciaEstatica/InstanciaEstaticaFUSEKI.java</file>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/InstanciaDinamica/ExtracaoDAO.java</file>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/InstanciaDinamica/LinkExtracao.java</file>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/Extrator/MDado.java</file>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/ExtratorMDadosWatson.java</file>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/Fuseki/ConnectFUSEKI.java</file>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/DB/ConnectDB.java</file>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/InstanciaDinamica/JsonConteudo.java</file>
+            <file>file:/C:/Users/thiag/Documents/NetBeansProjects/ExtratorMDadosWatson/src/extratormdadoswatson/Extrator/ResultadoBusca.java</file>
+        </group>
+    </open-files>
+</project-private>

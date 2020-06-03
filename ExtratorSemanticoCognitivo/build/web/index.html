@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>PLATSINN - WEB SERVICE</title>
+        <link rel="icon" type="imagem/png" href="platinnos_logo.png" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 5px;
+                text-align: left;
+            }
+        </style>
+    
+    
+    </head>
+    <body>
+        <center><div>
+            <img src="platinnos_logo.png" alt="SCORPIONN" height="200" width="200"> </>
+            <p><b>PLATSINN - </b>Platform to Support Innovation: Recovery of Semantic and Cognitive Information</p>
+            <h2>STATUS:<b style="color:#0aa89e">ONLINE</b></h2>
+        
+            <table>
+                <tr>
+                  <th>Ação</th>
+                  <th>Descrição</th>
+                  <th>Forma de Requisição</th>
+                  <th>Parâmetros</th>
+                  <th>Saída</th>
+                  <th>Exemplo de Requisição</th>
+                </tr>
+                <tr>
+                  <td>/ListarTipoEstaticoServlet</td>
+                  <td>Retorna uma lista com os Tipos Estáticos!</td> 
+                  <td>GET</td>
+                  <td></td>
+                  <td>JSON</td>
+                  <td>http://localhost:51202/ExtratorSemanticoCognitivo/ListarTipoEstaticoServlet</td>
+                </tr>
+                <tr>
+                  <td>/ListarTipoDinamicoServlet</td>
+                  <td>Retorna uma lista com os Tipos Dinâmicos!</td>
+                  <td>GET</td>
+                  <td></td>
+                  <td>JSON</td>
+                  <td>http://localhost:51202/ExtratorSemanticoCognitivo/ListarTipoDinamicoServlet</td>
+                </tr>
+                <tr>
+                  <td>/ListarInstanciaEstaticaServlet</td>
+                  <td>Retorna uma lista com as Instâncias Estáticas!</td> 
+                  <td>GET</td>
+                  <td></td>
+                  <td>JSON</td>
+                  <td>http://localhost:51202/ExtratorSemanticoCognitivo/ListarInstanciaEstaticaServlet</td>
+                </tr>
+                <tr>
+                  <td>/ListarInstanciaDinamicaServlet</td>
+                  <td>Retorna uma lista com as Instâncias Dinâmicas!</td> 
+                  <td>GET</td>
+                  <td></td>
+                  <td>JSON</td>
+                  <td>http://localhost:51202/ExtratorSemanticoCognitivo/ListarInstanciaDinamicaServlet</td>
+                </tr>
+                <tr>
+                  <td>/ListarExtracaoServlet</td>
+                  <td>Retorna uma lista com as Extrações!</td> 
+                  <td>GET</td>
+                  <td></td>
+                  <td>JSON</td>
+                  <td>http://localhost:51202/ExtratorSemanticoCognitivo/ListarExtracaoServlet</td>
+                </tr>
+                <tr>
+                  <td>/ListarEntidadeServlet</td>
+                  <td>Retorna uma lista com as Entidades!</td> 
+                  <td>GET</td>
+                  <td></td>
+                  <td>JSON</td>
+                  <td>http://localhost:51202/ExtratorSemanticoCognitivo/ListarEntidadeServlet</td>
+                </tr>
+                <tr>
+                  <td>/DeletarInstanciaEstaticaServlet</td>
+                  <td>Deleta uma instância estática!</td> 
+                  <td>GET</td>
+                  <td>codigo</td>
+                  <td>JSON</td>
+                  <td>http://localhost:51202/ExtratorSemanticoCognitivo/DeletarInstanciaEstaticaServlet?codigo=E1</td>
+                </tr>
+                <tr>
+                  <td>/DeletarExtracaoServlet</td>
+                  <td>Deleta uma extração!</td> 
+                  <td>GET</td>
+                  <td>dominio</td>
+                  <td>JSON</td>
+                  <td>http://localhost:51202/ExtratorSemanticoCognitivo/DeletarExtracaoServlet?extracao=www.inovamarilia.com.br/category/noticias/</td>
+                </tr>
+                <tr>
+                  <td>/CadastrarInstanciaEstaticaServlet</td>
+                  <td>Cadastra uma instância estática!</td> 
+                  <td>GET</td>
+                  <td>nome, site, id_entidade, id_tipo_estatico</td>
+                  <td>JSON</td>
+                  <td>http://localhost:51202/ExtratorSemanticoCognitivo/CadastrarInstanciaEstaticaServlet?nome=Inova+Marilia&site=www.inovamarilia.com.br&id_entidade=1&id_tipo_estatico=1</td>
+                </tr>
+                <tr>
+                  <td>/CadastrarExtracaoServlet</td>
+                  <td>Cadastra uma extração!</td> 
+                  <td>GET</td>
+                  <td>link, tipo_dinamico, profundidade</td>
+                  <td>JSON</td>
+                  <td>http://localhost:51202/ExtratorSemanticoCognitivo/CadastrarExtracaoServlet?link=http://www.inovamarilia.com.br/category/noticias/&tipo_dinamico=noticia&profundidade=1</td>
+                </tr>
+                <tr>
+                  <td>/ObterAnaliseCognitiva</td>
+                  <td>Obtém uma análise cognitiva de um conteúdo utilizando o IBM Watson!</td> 
+                  <td>GET</td>
+                  <td>texto</td>
+                  <td>JSON</td>
+                  <td>http://localhost:51202/ExtratorSemanticoCognitivo/ObterAnaliseCognitiva?texto=Programa+Estadual+de+Fomento+e+Apoio+aos+Arranjos+Produtivos+Locais</td>
+                </tr>
+          </table>
+
+        </div></center>
+    </body>
+</html>
